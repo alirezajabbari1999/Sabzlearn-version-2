@@ -1,0 +1,13 @@
+.about-section-container{
+  padding: 0 2rem;
+}
+
+.about-section-container .about-section-boxes{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.about-section-container .about-section-boxes .box{
+  flex-grow: 1;
+  /* width: 50%; */
+}

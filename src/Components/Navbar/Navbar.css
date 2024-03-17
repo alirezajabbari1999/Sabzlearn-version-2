@@ -1,0 +1,131 @@
+.navbar-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.5rem;
+}
+
+.navbar-container .sidebar-open-btn{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+.navbar-container .sidebar-open-btn .sidebar-open-icon{
+  font-size: 3.5rem;
+  color: #999;
+}
+
+.navbar-container .right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-container .right .navbar-logo{
+
+}
+
+.navbar-container .right .navbar-logo img{
+  width: 9rem;
+}
+
+.navbar-container .right .navbar-menu{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar-container .right .navbar-menu .menu-item{
+  color: var(--dark);
+  transition: all .3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-container .right .navbar-menu .menu-item:hover{
+  color: var(--main-green);
+}
+
+.navbar-container .right .navbar-menu .menu-item .title{
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
+.navbar-container .right .navbar-menu .menu-item .submenu-component{
+  position: absolute;
+  background-color: var(--main-white);
+  width: 19rem;
+}
+
+.navbar-container .left{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-container .left .search-icon-box{
+  background-color: var(--light-gray);
+  padding: .7rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  cursor: pointer;
+}
+
+.navbar-container .left .search-icon-box .navbar-search-input{
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+  padding: .1rem .4rem;
+  font-family: inherit;
+}
+
+.navbar-container .left .search-icon-box .search-icon{
+  color: var(--dark);
+  font-size: 2rem;
+  transition: all .2s;
+}
+
+.navbar-container .left .search-icon-box .search-icon:hover{
+  color: var(--main-green);
+
+}
+
+.navbar-container .left .user-basket{
+  background-color: var(--light-gray);
+  padding: .7rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar-container .left .user-basket .basket-icon{
+  font-size: 2rem;
+}
+
+.navbar-container .left .username{
+} 
+
+.navbar-container .left .username button{
+  color: var(--main-green) !important;
+  background-color: var(--main-white);
+  border: 1px solid var(--main-green);
+  border-radius: .5rem;
+  padding: .4rem .6rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all .3s ease;
+} 
+
+.navbar-container .left .username button:hover{
+  color: var(--main-white) !important;
+  background-color: var(--main-green);
+} 

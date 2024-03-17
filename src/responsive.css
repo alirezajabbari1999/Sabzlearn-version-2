@@ -1,0 +1,72 @@
+@media screen and (max-width: 1060px) {
+  .navbar-container .right .navbar-menu .menu-item {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .topbar-container {
+    display: none !important;
+  }
+
+  .navbar-container .sidebar-open-btn {
+    display: block !important;
+  }
+
+  .navbar-container .right .navbar-menu {
+    display: none !important;
+  }
+
+  .navbar-container .left .search-icon-box {
+    display: none !important;
+  }
+
+  .landing-infos {
+    gap: 15rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-search-box {
+    width: 40rem !important;
+  }
+
+  .landing-infos {
+    gap: 5rem !important;
+  }
+
+  .footer-desc,
+  .footer-learning-links {
+    margin-bottom: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .landing-infos .info-item .info-desc {
+    font-size: 1.3rem;
+  }
+
+  .navbar-container .right .navbar-logo img {
+    width: 6rem !important;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .landing-infos {
+    flex-direction: column;
+  }
+  .landing-infos {
+    gap: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-search-box {
+    width: 27rem !important;
+  }
+
+  .sections-header-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

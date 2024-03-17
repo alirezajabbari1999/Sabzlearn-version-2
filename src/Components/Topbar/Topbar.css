@@ -1,0 +1,62 @@
+.topbar-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light-gray);
+  padding: 1.1rem 2.5rem;
+}
+
+.topbar-container .right{
+  display: flex;
+  align-items: center;
+}
+
+.topbar-container .right .menu{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.topbar-container .right .menu li{
+  
+}
+
+.topbar-container .right .menu li .list-item{
+  color: var(--dark);
+  transition: all .3s ease;
+}
+
+.topbar-container .right .menu li .list-item:hover{
+  color: #1e83f0;
+}
+
+.topbar-container .right .money-value{
+  margin-right: 1.5rem;
+}
+
+.topbar-container .left{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topbar-container .left .email{
+  display: flex;
+  align-items: center; 
+  gap: .5rem; 
+}
+
+.topbar-container .left .phone{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.topbar-container .left .topbar-icon{
+  font-size: 2rem;
+  color: var(--main-green);
+}

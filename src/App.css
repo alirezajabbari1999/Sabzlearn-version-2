@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: yekan;
+  src: url(./Components/Font/Yekan.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+  --main-green : #02ae02;
+  --main-white : #fff;
+  --dark : #111;
+  --light-gray: #eceff7;
+  --light-green: #02ae024d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  font-family: yekan,Arial, Helvetica, sans-serif !important;
+  height: 100vh;
+  line-height: 1.6;
+  font-size: 1.6rem !important;
+  direction: rtl;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: #1e83f0;
+}
+
+ul{
+  list-style-type: none;
 }

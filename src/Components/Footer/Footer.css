@@ -1,0 +1,73 @@
+.footer-container{
+  background-color: var(--light-gray);
+  margin: 5rem 0 2rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; */
+}
+
+.footer-title{
+  position: relative;
+  z-index: 99999;
+  margin-bottom: 1.5rem;
+}
+
+.footer-title::before{
+  content: '';
+  position: absolute;
+  background-color: var(--light-green);
+  width: 3rem;
+  height: 3rem;
+  border-radius: .5rem;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.footer-desc{
+  text-align: justify;
+}
+
+.footer-learning-links{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-learning-links .footer-learning-link,
+.footer-course-links .footer-course-link{
+  color: #212529;
+}
+
+.footer-learning-links .footer-learning-link:hover,
+.footer-course-links .footer-course-link:hover
+{
+  color: var(--main-green);
+}
+
+.footer-course-links{
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.footer-course-links .right,
+.footer-course-links .left{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright{
+  background-color: var(--light-gray);
+  padding: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-copyright .copyright-text{
+
+}
+
+.footer-copyright .copyright-text .copyright-link{
+  color: var(--main-green);
+}

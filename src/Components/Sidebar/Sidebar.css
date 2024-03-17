@@ -1,0 +1,122 @@
+.sidebar-container{
+  width: 35rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -35rem;
+  background-color: var(--main-white);
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.1);
+  z-index: 9999999;
+  transition: all .5s ease;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.sidebar-container.show{
+  right: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-container .sidebar-top{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sidebar-container .sidebar-top .icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: .2rem solid var(--light-gray);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-container .sidebar-top .icons .logo{
+
+}
+
+.sidebar-container .sidebar-top .icons .logo img{
+  width: 7rem;
+}
+
+.sidebar-container .sidebar-top .icons .sidebar-btns{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar-container .sidebar-top .icons .sidebar-btns .dark-light-btn,
+.sidebar-container .sidebar-top .icons .sidebar-btns .close-btn{
+  border: none;
+  outline: none;
+  background-color: var(--light-gray);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.sidebar-container .sidebar-top .icons .sidebar-btns .dark-light-btn .dark-light-icon,
+.sidebar-container .sidebar-top .icons .sidebar-btns .close-btn .close-icon{
+  font-size: 2.4rem;
+  color: #999;
+}
+
+.sidebar-container .sidebar-top .search-box{
+  margin: 0 auto;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:.5rem 1rem;
+  border-radius: 2rem;
+  margin: 0;
+}
+
+.sidebar-container .sidebar-top .search-box input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  
+}
+
+.sidebar-container .sidebar-top .search-box .search-btn{
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: #999;
+}
+
+.sidebar-container .sidebar-bottom{
+  margin: 2.5rem 0;
+}
+
+.sidebar-container .sidebar-bottom .sidebar-menu-title{
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sidebar-container .sidebar-bottom .sidebar-menu-items{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-gray);
+  padding: 1rem 1.5rem;
+  line-height: 2;
+  border-radius: 1rem;
+  transition: all .3s ease;
+}
+
+.sidebar-container .sidebar-bottom .sidebar-menu-items .sidebar-menu-item{
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+.sidebar-container .sidebar-bottom .sidebar-menu-items .sidebar-menu-item:hover{
+  color: var(--main-green);
+}

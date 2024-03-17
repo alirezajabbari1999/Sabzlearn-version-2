@@ -1,0 +1,19 @@
+.courses-container {
+  padding: 0 2rem;
+}
+
+.courses-container .courses-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.courses-container .courses-row .courses-col {
+  flex-grow: 1;
+  flex-basis: 32%;
+}
+
+.courses-link{
+  text-decoration: none;
+  color: inherit;
+}
