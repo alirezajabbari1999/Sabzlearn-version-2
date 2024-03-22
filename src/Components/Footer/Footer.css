@@ -3,14 +3,11 @@
   margin: 5rem 0 2rem;
   border-radius: 1rem;
   padding: 3rem;
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; */
 }
 
 .footer-title{
   position: relative;
-  z-index: 99999;
+  z-index: 1;
   margin-bottom: 1.5rem;
 }
 

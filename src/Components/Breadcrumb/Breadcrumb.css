@@ -1,0 +1,30 @@
+.Breadcrumb-container{
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+.Breadcrumb-container .Breadcrumb-icon-container{
+  background-color: var(--main-white);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Breadcrumb-container .Breadcrumb-icon-container .Breadcrumb-icon{
+}
+
+.Breadcrumb-container ul{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 0;
+}
+
+.Breadcrumb-container ul li .Breadcrumb-link{
+  color: var(--dark);
+}

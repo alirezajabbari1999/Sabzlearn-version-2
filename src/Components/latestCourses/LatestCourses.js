@@ -17,12 +17,13 @@ export default function LatestCourses() {
           title={"جدیدترین دوره ها"}
           desc={"سکوی پرتاب شما به سمت موفقیت"}
           btn={"تمامی دوره ها"}
+          to={'/courses'}
         />
 
         <Row>
           {latestData.map((course) => (
             <Col key={course.id} xs={12} md={6} lg={4}>
-              <Link className="courses-link" to={course.link}>
+              <Link className="courses-link" to='/course-info'>
                 <Course key={course.id} {...course} />
               </Link>
             </Col>

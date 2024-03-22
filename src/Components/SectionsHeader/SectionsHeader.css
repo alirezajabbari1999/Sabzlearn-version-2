@@ -35,7 +35,7 @@
 
 }
 
-.sections-header-container .left button {
+.sections-header-container .left .button {
   color: var(--main-white);
   border: none;
   outline: none;

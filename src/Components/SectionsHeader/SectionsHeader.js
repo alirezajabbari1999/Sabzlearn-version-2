@@ -1,11 +1,13 @@
-// این کامپوننت مربوط به بخش تایتا و عنوان هر سکشن میباشد
+// این کامپوننت مربوط به بخش تایتل و عنوان هر سکشن میباشد
 
 import React from "react";
 import "./SectionsHeader.css";
+import { Link } from "react-router-dom";
+
 
 import { FaArrowLeftLong } from "react-icons/fa6";
 
-export default function SectionsHeader({ title, desc, btn }) {
+export default function SectionsHeader({ title, desc, btn,to }) {
   return (
     <div className="sections-header-container">
       <div className="right">
@@ -15,10 +17,10 @@ export default function SectionsHeader({ title, desc, btn }) {
 
       <div className="left">
         {btn && (
-          <button>
+          <Link to={to} className="button">
             {btn}
             <FaArrowLeftLong className="arrow-icon" />
-          </button>
+          </Link>
         )}
       </div>
     </div>

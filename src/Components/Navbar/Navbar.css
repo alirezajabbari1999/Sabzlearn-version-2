@@ -52,6 +52,11 @@
   display: flex;
   align-items: center;
   gap: .2rem;
+  color: var(--dark);
+}
+
+.navbar-container .right .navbar-menu .menu-item .title:hover{
+  color: var(--main-green);
 }
 
 .navbar-container .right .navbar-menu .menu-item .submenu-component{

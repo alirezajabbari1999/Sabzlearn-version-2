@@ -1,4 +1,4 @@
-import React, { useState,useContext } from "react";
+import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import logoImg from "./../../images/sabzlearn-logo.webp";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ import productContext from "../Context/ProductContext";
 
 export default function Navbar() {
   const [showSubmenu, setShowSubmenu] = useState(null); // مربوط به وضعیت باز یا بسته بودن ساب منو ها
-  const contextData = useContext(productContext)
+  const contextData = useContext(productContext);
 
   const handleSubMenuOpen = (index) => {
     setShowSubmenu(index);
@@ -27,17 +27,16 @@ export default function Navbar() {
     setShowSubmenu(null);
   };
 
-  const openSidebarHandler = ()=>{
-    contextData.setShowSidebar(true)
-  }
+  const openSidebarHandler = () => {
+    contextData.setShowSidebar(true);
+  };
 
   return (
     <div className="navbar-container">
-
-    {/* آیکون مربوط به ساید بار */}
-    <button className="sidebar-open-btn" onClick={()=> openSidebarHandler()}>
-      <IoMenu className="sidebar-open-icon"/>
-    </button>
+      {/* آیکون مربوط به ساید بار */}
+      <button className="sidebar-open-btn" onClick={() => openSidebarHandler()}>
+        <IoMenu className="sidebar-open-icon" />
+      </button>
 
       <div className="right">
         <div className="navbar-logo">
@@ -47,16 +46,20 @@ export default function Navbar() {
         </div>
 
         <ul className="navbar-menu">
-          <li className="menu-item">صفحه اصلی</li>
+          <li className="menu-item">
+            <Link to="/" className="title">
+              صفحه اصلی
+            </Link>
+          </li>
           <li
             className="menu-item"
             onMouseEnter={() => handleSubMenuOpen(0)}
             onMouseLeave={handleSubMenuClose}
           >
-            <span className="title">
+            <Link to="/category-info/frontend" className="title">
               فرانت اند
               <IoIosArrowDown />
-            </span>
+            </Link>
             <span className="submenu-component">
               {showSubmenu === 0 && <Submenu items={frontendSubMenu} />}
             </span>
@@ -66,25 +69,12 @@ export default function Navbar() {
             onMouseEnter={() => handleSubMenuOpen(1)}
             onMouseLeave={handleSubMenuClose}
           >
-            <span className="title">
+            <Link to="/category-info/security" className="title">
               امنیت
               <IoIosArrowDown />
-            </span>
+            </Link>
             <span className="submenu-component">
               {showSubmenu === 1 && <Submenu items={securitySubMenu} />}
-            </span>
-          </li>
-          <li
-            className="menu-item"
-            onMouseEnter={() => handleSubMenuOpen(2)}
-            onMouseLeave={handleSubMenuClose}
-          >
-            <span className="title">
-              مقالات
-              <IoIosArrowDown />
-            </span>
-            <span className="submenu-component">
-              {showSubmenu === 2 && <Submenu items={articleSubMenu} />}
             </span>
           </li>
           <li
@@ -92,23 +82,42 @@ export default function Navbar() {
             onMouseEnter={() => handleSubMenuOpen(3)}
             onMouseLeave={handleSubMenuClose}
           >
-            <span className="title">
+            <Link to="/category-info/python" className="title">
               پایتون
               <IoIosArrowDown />
-            </span>
+            </Link>
             <span className="submenu-component">
               {showSubmenu === 3 && <Submenu items={pythonSubMenu} />}
             </span>
           </li>
+          <li
+            className="menu-item"
+            onMouseEnter={() => handleSubMenuOpen(2)}
+            onMouseLeave={handleSubMenuClose}
+          >
+            <Link to="" className="title">
+              مقالات
+              <IoIosArrowDown />
+            </Link>
+            <span className="submenu-component">
+              {showSubmenu === 2 && <Submenu items={articleSubMenu} />}
+            </span>
+          </li>
           <li className="menu-item">
-            <span className="title">مهارت های نرم</span>
+            <Link to="" className="title">
+              مهارت های نرم
+            </Link>
           </li>
         </ul>
       </div>
 
       <div className="left">
         <div className="search-icon-box">
-          <input type="text" className="navbar-search-input" placeholder="جستجو..."/>
+          <input
+            type="text"
+            className="navbar-search-input"
+            placeholder="جستجو..."
+          />
           <IoSearchSharp className="search-icon" />
         </div>
 
